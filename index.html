@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset = "UTF-8">
+    <meta charset="UTF-8">
     <title>Risk Evaluation</title>
   </head>
   
@@ -63,7 +63,11 @@
 	</style>
 	
 	<script language="JavaScript">
+	// https://www.infoworld.com/article/2077176/using-javascript-and-forms.html
+	// https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 	function enterButton(form) {
+		var x1 = document.getElementById("high");
+		var x2 = document.getElementById("low");
 		if (form.citizenship[1].checked || form.country[1].checked || form.test[0].checked || form.language[1].checked) {
 			// alert("High risk");
 			x1.style.display = "block";
