@@ -44,7 +44,18 @@
 		<label for="lng-no">No</label>
 		<br>
 		<br>
+		
+		<input type="button" name="enter" value="Get risk estimate" onclick="enterButton(this.form)">
 	</form>
 	
+	<script language="JavaScript">
+	function enterButton(form) {
+		if (form.citizenship[1].checked || form.country[1].checked || form.test[0].checked || form.language[1].checked) {
+			alert("High risk");
+		} else {
+			alert("Low risk");
+		}
+	}
+	</script>
   </body>
 </html>
