@@ -48,12 +48,30 @@
 		<input type="button" name="enter" value="Get risk estimate" onclick="enterButton(this.form)">
 	</form>
 	
+	<div id="high">High risk.</div>
+	
+	<div id="low">Low risk.</div>
+	
+	<style>
+	#high {
+		display: none;
+	}
+	
+	#low {
+		display: none;
+	}
+	</style>
+	
 	<script language="JavaScript">
 	function enterButton(form) {
 		if (form.citizenship[1].checked || form.country[1].checked || form.test[0].checked || form.language[1].checked) {
-			alert("High risk");
-		} else {
-			alert("Low risk");
+			// alert("High risk");
+			x1.style.display = "block";
+			x2.style.display = "none";
+		} else if (form.citizenship[0].checked && form.country[0].checked && form.test[1].checked && form.language[0].checked) {
+			// alert("Low risk");
+			x1.style.display = "none";
+			x2.style.display = "block";
 		}
 	}
 	</script>
