@@ -9,45 +9,47 @@
   <body>
     <h1>Use this form to get an estimate of the risk for failing</h1>
 	
-	<form name="projectform">
-		<p>Is the student a Canadian citizen?</p>
-		<input type="radio" id="cit-yes" name="citizenship" value="Yes">
-		<label for="cit-yes">Yes</label>
-		<br>
-		<input type="radio" id="cit-no" name="citizenship" value="No">
-		<label for="cit-no">No</label>
-		<br>
-		<br>
-		
-		<p>Did the student go to school in a country where English is a primary language?</p>
-		<input type="radio" id="ctr-yes" name="country" value="Yes">
-		<label for="ctr-yes">Yes</label>
-		<br>
-		<input type="radio" id="ctr-no" name="country" value="No">
-		<label for="ctr-no">No</label>
-		<br>
-		<br>
-		
-		<p>Did the student have to demonstrate English proficiency prior to admission (e.g., by taking an IELTS, TOEFL, or DUOLINGO test)?</p>
-		<input type="radio" id="tst-yes" name="test" value="Yes">
-		<label for="tst-yes">Yes</label>
-		<br>
-		<input type="radio" id="tst-no" name="test" value="No">
-		<label for="tst-no">No</label>
-		<br>
-		<br>
-		
-		<p>Does the student have English as a first language?</p>
-		<input type="radio" id="lng-yes" name="language" value="Yes">
-		<label for="lng-yes">Yes</label>
-		<br>
-		<input type="radio" id="lng-no" name="language" value="No">
-		<label for="lng-no">No</label>
-		<br>
-		<br>
-		
-		<input type="button" name="enter" value="Get risk estimate" onclick="enterButton(this.form)">
-	</form>
+	<div id="content">
+		<form name="projectform">
+			<p>Is the student a Canadian citizen?</p>
+			<input type="radio" id="cit-yes" name="citizenship" value="Yes">
+			<label for="cit-yes">Yes</label>
+			<br>
+			<input type="radio" id="cit-no" name="citizenship" value="No">
+			<label for="cit-no">No</label>
+			<br>
+			<br>
+			
+			<p>Did the student go to school in a country where English is a primary language?</p>
+			<input type="radio" id="ctr-yes" name="country" value="Yes">
+			<label for="ctr-yes">Yes</label>
+			<br>
+			<input type="radio" id="ctr-no" name="country" value="No">
+			<label for="ctr-no">No</label>
+			<br>
+			<br>
+			
+			<p>Did the student have to demonstrate English proficiency prior to admission (e.g., by taking an IELTS, TOEFL, or DUOLINGO test)?</p>
+			<input type="radio" id="tst-yes" name="test" value="Yes">
+			<label for="tst-yes">Yes</label>
+			<br>
+			<input type="radio" id="tst-no" name="test" value="No">
+			<label for="tst-no">No</label>
+			<br>
+			<br>
+			
+			<p>Does the student have English as a first language?</p>
+			<input type="radio" id="lng-yes" name="language" value="Yes">
+			<label for="lng-yes">Yes</label>
+			<br>
+			<input type="radio" id="lng-no" name="language" value="No">
+			<label for="lng-no">No</label>
+			<br>
+			<br>
+			
+			<input type="button" name="enter" value="Get risk estimate" onclick="enterButton(this.form)">
+		</form>
+	</div>
 	
 	<br>
 	
