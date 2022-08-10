@@ -7,12 +7,50 @@
   
   <body>
     <h1>Use this form to get an estimate of the risk for failing</h1>
-	<p>Is the student a Canadian citizen?</p>
-	<input type="radio" id="cit-yes" name="citizenship" value="Yes">
-	<label for="cit-yes">Yes</label>
-	<br>
-	<input type="radio" id="cit-no" name="citizenship" value="No">
-	<label for="cit-no">No</label>
-	<br>
+	
+	<form name="projectform">
+		<p>Is the student a Canadian citizen?</p>
+		<input type="radio" id="cit-yes" name="citizenship" value="Yes">
+		<label for="cit-yes">Yes</label>
+		<br>
+		<input type="radio" id="cit-no" name="citizenship" value="No">
+		<label for="cit-no">No</label>
+		<br>
+		<br>
+		
+		<p>Did the student go to school in a country where English is a primary language?</p>
+		<input type="radio" id="ctr-yes" name="country" value="Yes">
+		<label for="ctr-yes">Yes</label>
+		<br>
+		<input type="radio" id="ctr-no" name="country" value="No">
+		<label for="ctr-no">No</label>
+		<br>
+		<br>
+		
+		<p>Select the admission test:</p>
+		<input type="radio" id="tst-i" name="test" value="IELTS">
+		<label for="test-i">IELTS</label>
+		<br>
+		<input type="radio" id="tst-t" name="test" value="TOEFL">
+		<label for="tst-t">TOEFL</label>
+		<br>
+		<input type="radio" id="tst-d" name="test" value="DUOLINGO">
+		<label for="tst-d">DUOLINGO</label>
+		<br>
+		<input type="radio" id="tst-n" name="test" value="Not required">
+		<label for="tst-n">Not required</label>
+		<br>
+		<br>
+		
+		<p>Does the student have English as a first language?</p>
+		<input type="radio" id="lng-yes" name="language" value="Yes">
+		<label for="lng-yes">Yes</label>
+		<br>
+		<input type="radio" id="lng-no" name="language" value="No">
+		<label for="lng-no">No</label>
+		<br>
+		<br>
+	</form>
+	
   </body>
 </html>
