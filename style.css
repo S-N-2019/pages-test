@@ -17,16 +17,60 @@ p {
 	font-weight: bold;
 }
 
-.low {
-	color: green;
+input[type='radio']:after {
+	width: 12px;
+	height: 12px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
 }
 
-.mid {
-	color: orange;
+.low:checked:after {
+	width: 12px;
+	height: 12px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: limegreen;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
 }
 
-.high {
-	color: coral;
+.mid:checked:after {
+	width: 12px;
+	height: 12px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: gold;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+.high:checked:after {
+	width: 12px;
+	height: 12px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: coral;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
 }
 
 input[type=button] {
@@ -51,7 +95,7 @@ input[type=button]:active {
 
 #midrisk {
 	display: none;
-	background-color: orange;
+	background-color: gold;
 	width: 500px;
 	border: 5px solid white;
 	margin: auto;
