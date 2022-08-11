@@ -43,7 +43,7 @@
 			<label for="lng-yes" class="low">Yes</label>
 			<br>
 			<input type="radio" id="lng-no" name="language" value="No">
-			<label for="lng-no" class="high">No</label>
+			<label for="lng-no" class="mid">No</label>
 			<br>
 			<br>
 			
@@ -53,23 +53,31 @@
 	
 	<br>
 	
-	<div id="highrisk">High risk</div>
 	<div id="lowrisk">Low risk</div>
+	<div id="midrisk">Medium risk</div>
+	<div id="highrisk">High risk</div>
 	
 	<script language="JavaScript">
 	// https://www.infoworld.com/article/2077176/using-javascript-and-forms.html
 	// https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 	function enterButton(form) {
-		var x1 = document.getElementById("highrisk");
-		var x2 = document.getElementById("lowrisk");
-		if (form.citizenship[1].checked || form.country[1].checked || form.test[0].checked || form.language[1].checked) {
+		var x1 = document.getElementById("lowrisk");
+		var x2 = document.getElementById("midrisk");
+		var x3 = document.getElementById("highrisk");
+		if ((form.citizenship[1].checked || form.country[1].checked || form.test[0].checked) && form.language[0].checked) {
 			// alert("High risk");
-			x1.style.display = "block";
+			x1.style.display = "none";
 			x2.style.display = "none";
-		} else if (form.citizenship[0].checked && form.country[0].checked && form.test[1].checked && form.language[0].checked) {
-			// alert("Low risk");
+			x3.style.display = "block";
+		} else if (form.citizenship[0].checked && form.country[0].checked && form.test[1].checked && form.language[1].checked) {
+			// alert("Medium risk");
 			x1.style.display = "none";
 			x2.style.display = "block";
+			x3.style.display = "none";
+		} else if (form.citizenship[0].checked && form.country[0].checked && form.test[1].checked && form.language[0].checked) {
+			// alert("Low risk");
+			x1.style.display = "block";
+			x3.style.display = "none";
 		}
 	}
 	</script>
