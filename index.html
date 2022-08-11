@@ -64,7 +64,7 @@
 		var x1 = document.getElementById("lowrisk");
 		var x2 = document.getElementById("midrisk");
 		var x3 = document.getElementById("highrisk");
-		if ((form.citizenship[1].checked || form.country[1].checked || form.test[0].checked) && form.language[0].checked) {
+		if (form.citizenship[1].checked || form.country[1].checked || form.test[0].checked) {
 			// alert("High risk");
 			x1.style.display = "none";
 			x2.style.display = "none";
