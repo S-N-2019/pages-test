@@ -3,8 +3,8 @@
 }
 
 body {
-	background-color: #f2f2f2; /* for browsers that do not support gradients */
-	background-image: radial-gradient(grey, darkgrey, lightgrey);
+	background-color: lightgrey; /* for browsers that do not support gradients */
+	background-image: radial-gradient(darkgrey, lightgrey, #f2f2f2);
 }
 
 h1 {
