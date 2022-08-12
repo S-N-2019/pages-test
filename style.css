@@ -4,7 +4,7 @@
 
 body {
 	background-color: #f2f2f2; /* for browsers that do not support gradients */
-	background-image: radial-gradient(circle, grey, darkgrey, lightgrey);
+	background-image: radial-gradient(grey, darkgrey, lightgrey);
 }
 
 h1 {
