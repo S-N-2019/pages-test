@@ -16,7 +16,8 @@ h1 {
 	margin: auto;
 	border: 2px solid black;
 	background-color: white;
-	padding: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 }
 
 p {
@@ -96,12 +97,12 @@ input[type=button]:active {
 	background-color: limegreen;
 	width: 500px;
 	border: 5px solid white;
-	border-radius: 70px;
+	border-radius: 50px;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 #midrisk {
@@ -109,12 +110,12 @@ input[type=button]:active {
 	background-color: gold;
 	width: 500px;
 	border: 5px solid white;
-	border-radius: 70px;
+	border-radius: 50px;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 #highrisk {
@@ -122,10 +123,10 @@ input[type=button]:active {
 	background-color: coral;
 	width: 500px;
 	border: 5px solid white;
-	border-radius: 70px;
+	border-radius: 50px;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 30px;
 }
